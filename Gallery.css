@@ -1,0 +1,142 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa
+} /* Adjusting the font and background color of the body*/
+p{
+    font-family: 'Poppins', sans-serif;
+    
+} /* Adjusting the font and background color of each paragraph*/
+a,
+a:hover,
+a:focus{
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s;
+} 
+.navbar{
+	padding: 10px 0px;
+    background: #fff;
+    margin-bottom: 40px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}/*Adjusting the navbar*/
+
+.navbar ul li{
+    font-size: large;
+    padding-left: 13px;;
+}
+
+.navbar-btn{
+	box-shadow: none;
+	outline: none!important;
+	border: none;
+}/*Adjusting the navbar- button*/
+
+.line{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #ddd;
+}/*For the empty line div*/
+
+.wrapper{
+    
+    
+    align-items: stretch;
+} /*adjusting the wrapper div*/
+#sidebar{
+    min-width: 250px;
+    max-width: 250px;
+    background: rgb(160, 13, 43);
+    color: #fff;
+    transition: all 0.3s;
+    border: rgb(100, 4, 23) solid 1px;
+} /*adjusting the wrapper div*/
+
+#sidebar.active{
+	margin-left: -250px;
+	display: none;
+}/*Adjusting the side after it has been toggled*/
+
+
+#sidebar .sidebar-header{
+	padding: 20px;
+	background:rgb(129, 21, 48);
+}/*Adjusting the sidebar header*/
+
+#sidebar ul.components{
+	padding: 20px 0px;
+	border-bottom: 1px solid rgb(139, 17, 42);
+}/*Adjusting the sidebar ul components*/
+
+#sidebar ul p{
+	padding: 10px;
+	font-size: 1.1em;
+    background:white;
+    color: rgb(129, 21, 48);
+}/*Adjusting the sidebar ul paragraphs*/
+
+#sidebar ul li a{
+	padding: 10px;
+	font-size: 1.1em;
+    display: block;
+} /*Adjusting the anchors*/
+
+#sidebar ul li a:hover {
+    color: rgb(151, 23, 49);
+    background: #fff;
+} /*Adjusting the anchors when they're hovered over*/
+
+a[data-toggle="collapse"] {
+    position: relative;
+} /*changing the position to relative when an anchor drops the dropdown menu*/
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background:rgb(146, 19, 44);
+}/*Decreasing the font size and adjusting the backgroung to lighter of the dropdowned items*/
+
+ul.CTAs {
+    padding: 20px;
+}/*Adding the padding with the last two elements*/
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}/*Adjusting the last two elements*/
+
+a.download{
+	background: #fff;
+    color:rgb(119, 19, 39);
+}/*Adjusting the download anchor*/
+
+a.article{
+    background: rgb(119, 19, 39) !important;
+    color: #fff !important;
+}/*Adjusting the article anchor*/
+
+a.article:hover{
+    color: rgb(119, 19, 39) !important;
+    background: #fff !important;
+}/*Adjusting the article anchor when hovered over*/
+
+img{
+    width: 15vh;
+    height: 9vh;
+    padding-top: 5px;
+}
+#im{
+    width: 10%;
+    height: 10% ;
+}
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+}
+.image img{
+    position:absolute;
+}

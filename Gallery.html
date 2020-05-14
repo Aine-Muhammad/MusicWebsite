@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS, our css, and fonts -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <title>Bootstrap-4 Sidebar</title>
+  </head>
+  <body>
+   
+  <div class="wrapper d-flex"> <!--The main wrapper div which will hold all our content, navbar and sidebar-->
+     
+    <nav id="sidebar" > <!--The nav for sidebar-->
+      <div class="sidebar-header">
+          <h3>EXPLORE</h3> <!--Sidebar header-->
+      </div>
+      
+      
+      <ul class="list-unstyled components"> <!--List for sidebar components-->
+          <p>EveryThing Music</p> <!--Dummy heading-->
+          <li class="active"> <!--First active element-->
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Genre</a> <!--The home menu anchor which is a dropdown toggle for a drop menu, which is initially not expanded and collapses when clicked-->
+              <ul class="collapse list-unstyled" id="homeSubmenu"> <!--Unordered list for drop down items-->
+                  <li>
+                      <a href="#">Rock</a> <!--First dropdown item-->
+                  </li>
+                  <li>
+                      <a href="#">Blues</a> <!--Second dropdown item-->
+                  </li>
+                  <li>
+                      <a href="#">Classical</a> <!--Third dropdown item-->
+                  </li>
+                  <li>
+                     <a href="#">Pop</a> <!--Fourth dropdown item-->
+                 </li>
+                  <li>
+                    <a href="#">Jazz</a> <!--Fifth dropdown item-->
+                  </li>
+              </ul> 
+          </li>
+          
+          <li>
+              <a href="#">Explore</a> <!--The second element-->
+          </li>
+          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Stream</a> <!--The third element which is a collapse menu, which is initially not expanded and acts as a toggle-->
+              <ul class="collapse list-unstyled" id="pageSubmenu"> <!--unordered list for holding dropdown elements-->
+                  <li>
+                      <a href="#">See What's Live</a> <!--First dropdown item-->
+                  </li>
+                  <li>
+                      <a href="#">Start Stream</a> <!--Second dropdown item-->
+                  </li>
+                  <li>
+                      <a href="#">Recorded Streams</a> <!--Third dropdown item-->
+                  </li>
+              </ul> 
+          </li>
+          <li> <!--The fourth element-->
+              <a href="#">Services</a>
+          </li>
+          <li> <!--The fifth element-->
+              <a href="#">Contact Us</a>
+          </li>
+      </ul>
+      
+      <ul class="list-unstyled CTAs"> <!--Unordered list for the last two items-->
+          <li>
+              <a href="#" class="download">Download Music</a> <!--The sixth element-->
+          </li>
+          <li>
+              <a href="#" class="article">Write Reviews</a> <!--The seventh element-->
+          </li>
+      </ul>
+  </nav>
+   	
+   	<div class="content m-4"> <!--The div which contains the main content and navigation bar on top-->
+   		<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--Nav bar-->
+   		
+   		
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!--The toggle button for navigation bar which collapses in smaller than large screens-->
+    <span class="navbar-toggler-icon"></span> <!--The button icon-->
+  </button>
+ 
+
+  <a href="#">
+    <img src="img1.png" alt="EveryThing Music">
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarNav"> <!--collapsable navbar-->
+    <ul class="navbar-nav mr-auto"> <!--The unordered list which holds all the elements, placed on the left hand side-->
+      
+      <li class="nav-item active"> <!--The first active element-->
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item"> <!--The second element-->
+        <a class="nav-link" href="#">Post</a>
+      </li>
+      <li class="nav-item"> <!--The third element-->
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item"> <!--The fourth element-->
+        <a class="nav-link" href="#">Disabled</a>
+      </li>
+      <li>
+        <button type="button" class="btn btn-dark"> <!--The music button-->
+          <a href="#" class="fas fa-headphones-alt"></a>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
+</nav>
+  	
+  	
+  	<!--The content-->
+  	<h5>Check out the latest music and audio that our community is loving the most. Enjoy the best taste of music from all over the world</h5>
+    
+    <div class="row "> <!--first row-->
+      <div class="col-md-3"> <!--first picture-->
+        <div class="image">
+          <img src="1.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3"> <!--second picture-->
+        <div class="image"> <!--image that fills 75%-->
+          <img src="2.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3"> <!--third picture-->
+        <div class="image">
+          <img src="3.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3">  <!--fourth picture-->
+        <div class="image"> 
+          <img src="4.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      
+    </div>
+    
+    <div class="row "> <!--first row-->
+      <div class="col-md-3"> <!--first picture-->
+        <div class="image">
+          <img src="1.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3"> <!--second picture-->
+        <div class="image"> <!--image that fills 75%-->
+          <img src="2.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3"> <!--third picture-->
+        <div class="image">
+          <img src="3.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3">  <!--fourth picture-->
+        <div class="image"> 
+          <img src="4.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      
+    </div>
+    <div class="row "> <!--first row-->
+      <div class="col-md-3"> <!--first picture-->
+        <div class="image">
+          <img src="1.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3"> <!--second picture-->
+        <div class="image"> <!--image that fills 75%-->
+          <img src="2.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3"> <!--third picture-->
+        <div class="image">
+          <img src="3.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+      <div class="col-md-3">  <!--fourth picture-->
+        <div class="image"> 
+          <img src="4.jpg" class="img img-fluid w-75" alt=""> <!--image that fills 75%-->
+        </div>
+        <p class="font-weight-bold">Song</p> <!--paragraph for song-->
+        <p class="font-weight-light">Singer</p> <!--paragraph for singer-->
+      </div>
+    </div>
+  	
+  </div>
+     
+</div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS and a font script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    
+     
+  </body>
+</html>
